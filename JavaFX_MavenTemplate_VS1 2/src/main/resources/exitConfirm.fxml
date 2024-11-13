@@ -1,0 +1,13 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id = "exitScreen" style= "-fx-background-image: url('3CardPokerFront.jpg'); -fx-background-size: cover;" xmlns:fx="http://javafx.com/javafx">
+
+            <VBox spacing="20" alignment="CENTER">
+                <Text fx:id="greetingText" text="Are you sure you want to quit?" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-fill: white;"/>
+                <Button fx:id="confirmButton" text="Yes, Quit" style="-fx-font-size: 20px; -fx-background-color: gray; -fx-text-fill: white;" />
+                <Button fx:id="returnButton" text="No, Return" style="-fx-font-size: 20px; -fx-background-color: gray; -fx-text-fill: white;" />
+            </VBox>
+    
+</StackPane>
