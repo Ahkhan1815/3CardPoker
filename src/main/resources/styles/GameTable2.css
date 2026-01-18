@@ -1,0 +1,25 @@
+#dealButton {
+    -fx-font-size: 20px; 
+	-fx-background-color: #006400; 
+	-fx-text-fill: white;
+}
+
+.button{
+	-fx-font-size: 20px; 
+	-fx-background-color: #5d8cae; 
+	-fx-text-fill: white;
+}
+
+.label{
+	-fx-fill: white;
+	
+}
+
+.outside{
+	-fx-background-color: #563232; 
+	-fx-text-fill: #45ff17; 
+}
+
+.background{
+	-fx-background-size: cover;
+}

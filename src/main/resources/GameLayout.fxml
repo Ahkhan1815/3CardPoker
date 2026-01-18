@@ -1,0 +1,76 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id = "gameScreen" styleClass = "background" xmlns:fx="http://javafx.com/javafx">
+    <top>
+        <VBox fx:id="topScreen" spacing="10" alignment="CENTER">
+        	<VBox alignment="CENTER">
+        	    <TextField styleClass = "outside" fx:id="GameMessage1" text="Welcome to 3 Card Poker" editable = "false" focusTraversable = "false"/>
+            	<TextField styleClass = "outside" fx:id="GameMessage2" text="Both players, place your bets!" editable = "false" focusTraversable = "false" />
+        	</VBox>
+            <HBox fx:id="dealerCardLayout" alignment="CENTER" spacing="10">
+            </HBox>
+        </VBox>
+    </top>
+
+    <left>
+        <VBox fx:id="playerSide1" spacing="10" alignment="CENTER">
+            <HBox fx:id="playerCardLayout1" alignment="CENTER" spacing="10">
+            </HBox>
+            <Text styleClass = "label" text="Ante Wager" />
+            <TextField fx:id="anteField1" promptText="Enter value 5 - 25" focusTraversable = "false"/>
+            <Text styleClass = "label" text="Pair Plus Wager (Optional)" />
+            <TextField fx:id="ppField1" promptText="Enter 0 or value 5 - 25" />
+            <Text styleClass = "label" text="Play Wager" />
+            <TextField fx:id="playField1" editable="false" />
+            <Text styleClass = "label" text="Total Winnings" />
+            <TextField fx:id="winningsField1" editable="false" />
+        </VBox>
+    </left>
+
+    <right>
+        <VBox fx:id="playerSide2" spacing="10" alignment="CENTER">
+            <HBox fx:id="playerCardLayout2" alignment="CENTER" spacing="10">
+            </HBox>
+            <Text styleClass = "label" text="Ante Wager" />
+            <TextField fx:id="anteField2" promptText="Enter value 5 - 25" focusTraversable = "false"/>
+            <Text styleClass = "label" text="Pair Plus Wager (Optional)" />
+            <TextField fx:id="ppField2" promptText="Enter 0 or value 5 - 25" />
+            <Text styleClass = "label" text="Play Wager" />
+            <TextField fx:id="playField2" editable="false" />
+            <Text styleClass = "label" text="Total Winnings" />
+            <TextField fx:id="winningsField2" editable="false" />
+        </VBox>
+    </right>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Button text="Deal" fx:id="dealButton" />
+            <HBox spacing="10" alignment="CENTER">
+                <VBox spacing="10" alignment="CENTER">
+                    <Button text="Player 1 Play" fx:id="playButton1" disable="true" />
+                    <Button text="Player 1 Fold" fx:id="foldButton1" disable="true" />
+                </VBox>
+                <VBox spacing="10" alignment="CENTER">
+                    <Button text="Player 2 Play" fx:id="playButton2" disable="true" />
+                    <Button text="Player 2 Fold" fx:id="foldButton2" disable="true" />
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+
+    <bottom>
+        <MenuBar styleClass = "outside">
+            <menus>
+                <Menu text="Options">
+                    <items>
+                        <MenuItem text="Exit" fx:id="exit" />
+                        <MenuItem text="Fresh Start" fx:id="freshStart" />
+                        <MenuItem text="New Look" fx:id="newLook" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </bottom>
+</BorderPane>
