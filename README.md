@@ -13,3 +13,10 @@ What I Learned:
 - JavaFX - Used to develop GUI and handle user interaction
 - Maven - Dependency management
 
+How to run:
+- Clone repository
+- Run:
+```
+mvn clean install -DskipTests
+mvn exec:java
+```
